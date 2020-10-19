@@ -509,7 +509,12 @@
         <div class="mail-form-wrapper">
           <h2 class="mail-form-title">Подпишитесь на рассылку</h2>
           <form action="#" class="mail-form">
-            <input type="email" class="mail-form-input" placeholder="E-mail" />
+            <input
+              type="email"
+              name="user-email"
+              class="mail-form-input"
+              placeholder="E-mail"
+            />
             <button class="mail-form-btn" type="submit">
               Подписаться
               <svg class="mail-form-btn-svg">
@@ -535,20 +540,32 @@
           <label class="modal-form-field"
             >Имя
             <span class="modal-form-field-wrapper"
-              ><input type="text" class="modal-form-input"
-            /></span>
+              ><input
+                type="text"
+                name="user-name"
+                class="modal-form-input" /><svg class="modal-form-svg">
+                <use href="./images/sprite.svg#icon-person-black"></use></svg
+            ></span>
           </label>
           <label class="modal-form-field"
             >Телефон
             <span class="modal-form-field-wrapper"
-              ><input type="tel" class="modal-form-input"
-            /></span>
+              ><input
+                type="tel"
+                name="user-pfone"
+                class="modal-form-input" /><svg class="modal-form-svg">
+                <use href="./images/sprite.svg#icon-phone-black"></use></svg
+            ></span>
           </label>
           <label class="modal-form-field"
             >Почта
             <span class="modal-form-field-wrapper"
-              ><input type="email" class="modal-form-input"
-            /></span>
+              ><input
+                type="email"
+                name="user-mail"
+                class="modal-form-input" /><svg class="modal-form-svg">
+                <use href="./images/sprite.svg#icon-email-black"></use></svg
+            ></span>
           </label>
 
           <label class="modal-form-comment" for="comment">Комментарий </label>
@@ -559,18 +576,18 @@
             placeholder="Введите текст"
           ></textarea>
 
-          <input
-            type="checkbox"
-            name="user-policy"
-            value="accept-policy"
-            id="check-policy"
-            class="modal-form-policy"
-          />
-          <!-- visually-hidden -->
-          <label for="check-policy" class="modal-form-policy-label"
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="#">Условия договора</a></label
-          >
+          <div class="policy-wrapper">
+            <input
+              type="checkbox"
+              name="user-policy"
+              value="accept-policy"
+              id="check-policy"
+              class="modal-form-policy visually-hidden"
+            /><label for="check-policy" class="modal-form-policy-label"
+              >Соглашаюсь с рассылкой и принимаю &nbsp;
+              <a href="#">Условия договора</a></label
+            >
+          </div>
           <button class="modal-form-btn" type="submit">Отправить</button>
         </form>
       </div>
