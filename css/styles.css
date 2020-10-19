@@ -116,9 +116,9 @@ img {
 }
 
 .address-link {
-  /* display: inline-flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center; */
+  /* justify-content: center; */
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -948,7 +948,7 @@ img {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0px;
+  border: none;
 
   padding-top: 10px;
   padding-left: 55px;
