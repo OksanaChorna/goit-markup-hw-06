@@ -134,6 +134,8 @@ img {
 }
 
 .header .address {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -148,16 +150,8 @@ img {
   color: var(--accent-color);
 }
 
-.envelope-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primery-description-color);
-}
-
+.envelope-icon,
 .smartphone-icon {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
   fill: var(--primery-description-color);
 }
